@@ -4,6 +4,6 @@ orbs:
   maven : circleci/maven@1.3.0
 
 workflows:
-  springulart-workflows:
+  cleanme-workflows:
     jobs:
       - maven/test
