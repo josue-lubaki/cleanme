@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation de votre Réservation</title>
+</head>
+<body style="background-color: white; color: black">
+    <h2>Confirmation de votre Réservation</h2>
+    <p th:text="|Bonjour ${fullname}|">Bonjour</p>
+    <p>
+        Nous tenons à vous informer que nous avons bien reçu votre réservation
+        <span th:text="|prévue en date du ${date} à ${time}|"></span>
+    </p>
+    <p>Commentaire : <span th:text="|${comment}|">S/O</span></p>
+    <p>Aller sur le site,
+        <a href="https://google.com" target="_blank">cliquez-ici</a></p>
+    <span style="border-bottom: 1px solid #000; padding-bottom: 5px">Nous vous souhaitons une belle journée !</span>
+    <p>Équipe Clean Car <br>
+        <a href="mailto:jonathankalokola99@gmail.com">Administration</a> -
+        Trois-Rivières, Canada
+    </p>
+</body>
+</html>

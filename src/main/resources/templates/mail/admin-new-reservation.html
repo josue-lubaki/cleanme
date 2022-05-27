@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouvelle Réservation</title>
+</head>
+<body style="background-color: white; color: black">
+    <h2>Nouvelle Réservation <span th:text="|de ${fullname}|"></span></h2>
+    <p>Voici mes informations :</p>
+    <div>
+        <ul>
+            <li>Nom : <span th:text="|${fullname}|"></span></li>
+            <li>Téléphone : <span th:text="|${phone}|"></span></li>
+            <li>Email : <span th:text="|${email}|"></span></li>
+            <li>Date Réservation : <span th:text="|${date}|"></span></li>
+            <li>Heure Réservation : <span th:text="|${time}|"></span></li>
+            <li>Adresse : <span th:text="|'#'${apartment}, ${street}, ${city}, ${state}|"></span></li>
+            <li>Commentaire : <span th:text="|${comment}|"></span>S/O</li>
+        </ul>
+    </div>
+    <p>Aller sur le site,
+        <a href="https://google.com" target="_blank">cliquez-ici</a></p>
+    <span style="border-bottom: 1px solid #000; padding-bottom: 5px"><b>C'est le business, on lâche pas !</b></span>
+    <p>Équipe Clean Car <br>
+        <a href="mailto:jonathankalokola99@gmail.com">Administration</a> -
+        Trois-Rivières, Canada
+    </p>
+</body>
+</html>
